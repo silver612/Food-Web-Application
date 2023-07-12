@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+
+    <script defer src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
+        type="text/javascript" charset="utf-8"></script>
+    <script defer src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
+        type="text/javascript" charset="utf-8"></script>
+    <script defer src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"
+        type="text/javascript" charset="utf-8"></script>
+    <script defer src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"
+        type="text/javascript" charset="utf-8"></script>
+    <script defer src="https://js.api.here.com/v3/3.1/mapsjs-clustering.js" 
+        type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <h4>Choose the location from your saved locations to see restaurants.</h4>
+    <p>Your saved locations: (Click on map or get your current location to add to this list)</p>
+    <div id="actions">
+        <button id="get-location-button">Get my location</button>
+    </div>
+    <br>
+    <ul id="addresses"></ul>
+    <br>
+    <div id="map" style=" width: 1000px; height: 500px "></div>
+    <script defer type="module" src="../../src/user src/location.js"></script>
+</body>
+</html>
